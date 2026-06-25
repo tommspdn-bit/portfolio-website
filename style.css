@@ -195,12 +195,15 @@ h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 22px;
+
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .project-card {
   position: relative;
   display: block;
-  height: 420px;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   background: #111;
   border: 1px solid rgba(255,255,255,.16);
