@@ -32,17 +32,27 @@ if (galleryImages.length > 0 && lightbox && lightboxImage) {
   });
 }
 
-// Graphic Design thumbnail hover swap
+// Graphic Design thumbnail hover swap with fade
 const brandingCard = document.querySelector(".branding-card");
 
 if (brandingCard) {
   const brandingImage = brandingCard.querySelector("img");
 
   brandingCard.addEventListener("mouseenter", () => {
-    brandingImage.src = "assets/WNB.png";
+    brandingImage.style.opacity = "0";
+
+    setTimeout(() => {
+      brandingImage.src = "assets/WNB.png";
+      brandingImage.style.opacity = "1";
+    }, 150);
   });
 
   brandingCard.addEventListener("mouseleave", () => {
-    brandingImage.src = "assets/BNW.png";
+    brandingImage.style.opacity = "0";
+
+    setTimeout(() => {
+      brandingImage.src = "assets/BNW.png";
+      brandingImage.style.opacity = "1";
+    }, 150);
   });
 }
