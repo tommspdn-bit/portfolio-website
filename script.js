@@ -31,3 +31,18 @@ if (galleryImages.length > 0 && lightbox && lightboxImage) {
     lightboxImage.src = "";
   });
 }
+
+// Graphic Design thumbnail hover swap
+const brandingCard = document.querySelector(".branding-card");
+
+if (brandingCard) {
+  const brandingImage = brandingCard.querySelector("img");
+
+  brandingCard.addEventListener("mouseenter", () => {
+    brandingImage.src = "assets/WNB.png";
+  });
+
+  brandingCard.addEventListener("mouseleave", () => {
+    brandingImage.src = "assets/BNW.png";
+  });
+}

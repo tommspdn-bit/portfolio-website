@@ -401,3 +401,10 @@ h2 {
     padding-top: 0;
   }
 }
+.branding-card {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 9;
+  justify-self: center;
+  width: 100%;
+  max-width: 900px;
+}
